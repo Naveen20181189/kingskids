@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
-const window = require('window')
+
 require('dotenv').config();
 const mongoose = require('mongoose')
 const multer = require('multer')
