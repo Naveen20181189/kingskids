@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    
+    <title>KKE</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>KingsKids Educational Society</h1><br>
+        
+    </div>
+    <div class="link">
+        <a href="/login">login</a><br><br>
+        <a href="/admin">Admin</a>
+    </div>
+    <!-- <footer>
+        <div class="footer">
+            <h3>Developed And Organized By: <span>KingsKids Educational Society</span></h3>
+            <h3>Found Any Issues ?</h3>
+            <h3>Contact:8341278189</h3>
+        </div>
+    </footer> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const tl = gsap.timeline();
+        gsap.from(".intro h1",{
+            opacity:0,
+            duration:1,
+            delay:0.7,
+        })
+        gsap.from(".link a",{
+            y:2000,
+            opacity:0,
+            duration:1,
+            delay:1
+        
+        })
+    </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/images.css">
+    <title>Images</title>
+</head>
+<body>
+    <div class="warning">
+        <h5>
+            To update The Image,First Delete The Image Using Delete Button Below And Now Click on update Button to update the Image
+        </h5>
+    </div>
+    <div class="image-container">
+        <% if (users.length > 0) { %>
+            <% users.forEach(user => { %>
+                <div class="student-container">
+                    <div class="student">
+                        <h4>Name : <%= user.studentname %></h4>
+                        <div class="image">
+                            <img src="<%= user.image %>" alt="">
+                        </div>
+                        <div class="matter">
+                            <a href="/updateimages">update</a>
+                            <a  id="link"  href="/deleted/<%= user.studentid %>/<%= user.imagename %>">Delete</a>
+                        </div>
+                    </div>
+                </div>
+
+            <% }); %> 
+         <% } else { %> 
+            <h1>No data found yet</h1>
+        <% } %>
+                </div>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <h3>Give Login Access To Others</h3>
+    <div class="maincont">
+        
+        <div class="login-form">
+            <form action="/register" method="post">
+                <label>username</label><br>
+                <input type="text" name="username" placeholder="Enter username" required><br>
+                <label for="">Password</label><br>
+                <input type="password" name="password" placeholder="Set Password" required><br>
+                <button type="submit">Submit</button>
+                
+                
+            </form>
+          
+           </div>
+           <div class="seelogins">
+        
+            <a href="/viewlogger">Accounts</a>
+            <a href="/logoutAdmin" target="_parent">Logout</a>
+           </div>
+    
+       </div>
+        
+
+       
+</body>
+
+</html>

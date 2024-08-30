@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/specific.css">
+    <title>Document</title>
+</head>
+<style>
+    /* Uncomment the styles if needed
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    h2 {
+        text-align: center;
+        color: red;
+    }
+    */
+</style>
+<body>
+    
+        
+            <div class="heading">
+                <span><%= user.studentname %></span>
+            </div>
+            <h2 class="subheading">Student details</h2>
+            <div class="major">
+                <div class="image">
+                    <img src="\<%=user.image %>" alt="" width="200px" height="200px">
+                </div>
+                <h3>Student Status: <span><%= user.status %></span></h3>
+                <h3>Student Name: <span><%= user.studentname %></span></h3>
+                <h3>Student ID: <span><%= user.studentid %></span></h3>
+                <h3>Gender: <span><%= user.gender %></span></h3>
+                <h3>Date of Birth: <span><%= user.dob %></span></h3>
+                <h3>Caste: <span><%= user.caste %></span></h3>
+                <h3>Religion: <span><%= user.religion %></span></h3>
+                <h3>Grade (Standard): <span><%= user.education %></span></h3>
+                <h3>Student Aadhar: <span><%= user.studentaadhar %></span></h3>
+                <h3>Student Address: <span><%= user.studentvillage %></span>, <span><%= user.studentmandal %> Mandal</span>, <span><%= user.studentdistrict %> District</span>, <%= user.studentpincode %></h3>
+                <div class="border"></div>
+            </div>
+            <div class="major">
+                <h2 class="subheading">Family Details</h2>
+                <h3>Mother Name: <span><%= user.mothername %></span></h3>
+                <h3>Father Name: <span><%= user.fathername %></span></h3>
+                <h3>Mother Aadhar: <span><%= user.motheraadhar %></span></h3>
+                <h3>Father Aadhar: <span><%= user.fatheraadhar %></span></h3>
+                <h3>No. of Siblings: <span><%= user.siblings %></span></h3>
+                <div class="border"></div>
+            </div>
+            <div class="major">
+                <h2 class="subheading">Student Previous Schooling and Health</h2>
+                <h3>Previous School: <span><%= user.previousschool %></span></h3>
+                <h3>Previous School Address: <span><%= user.schoolvillage %></span></h3>
+                <h3>Student Health Condition: <span><%= user.healthcondition %></span></h3>
+                <h3>Reason for Sickness: <span><%= user.healthreason %></span></h3>
+            </div>
+            <div class="border"></div>
+            <div class="major">
+                <h2 class="subheading">Admission Information</h2>
+                <h3>Reason for Admission: <span><%= user.admissionreason %></span></h3>
+                <h3>Name of the Person Who Admitted the Student: <span><%= user.admittedby %></span></h3>
+                <h3>Admitter's Address: <span><%= user.admittervillage %></span>, <span><%= user.admittermandal %> Mandal</span>, <span><%= user.admitterdistrict %> District</span>, <%= user.admitterpincode %></h3>
+                <h3>Admitter's Phone Number: <span><%= user.admitterphone %></span></h3>
+                <h3>Relationship with Student: <span><%= user.relationship %></span></h3>
+            </div>
+            <div class="border"></div>
+            <div class="major">
+                <h2 class="subheading">Emergency Contact Information</h2>
+                <h3>Emergency Contact (Name): <span><%= user.emergencycontactname %></span></h3>
+                <h3>Emergency Contact Number: <span><%= user.emergencycontactphone %></span></h3>
+                <h3>Address: <span><%= user.emergencycontactvillage %></span>, <span><%= user.emergencycontactmandal %> Mandal</span>, <span><%= user.emergencydist %> District</span>, <span><%= user.emerpin %></span></h3>
+            </div>
+        
+
+</body>
+</html>
